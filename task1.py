@@ -42,31 +42,71 @@ for i in range(len(gameData)):
                     teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='B':
             teamData['Bears'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='C':
             teamData['Cougars'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='D':
             teamData['Doges'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='E':
             teamData['Elephants'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='F':
             teamData['Foxes'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
         elif gameData[i]['t1']=='G':
             teamData['Giants'].win(gameData[i]['s1'])
+            for j in teamname:
+                if gameData[i]['t2']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s2'])
+
     elif gameData[i]['s1']<gameData[i]['s2']:
         if gameData[i]['t2']=='A':
             teamData['Ants'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='B':
             teamData['Bears'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='C':
             teamData['Cougars'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='D':
             teamData['Doges'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='E':
             teamData['Elephants'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='F':
             teamData['Foxes'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         elif gameData[i]['t2']=='G':
             teamData['Giants'].win(gameData[i]['s2'])
+            for j in teamname:
+                if gameData[i]['t1']==j[0:1]:
+                    teamData[j].loss(gameData[i]['s1'])
         
 print( teamData['Ants'].wins )
 print( teamData['Bears'].losses )
