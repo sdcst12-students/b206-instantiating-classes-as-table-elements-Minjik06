@@ -1,7 +1,7 @@
 #!python3
 
 # Calculate the mean and standard deviation for each of the following datasets:
-
+import math
 import random
 set1 = [5, 13, 6, 14, 11, 11, 8, 6, 15, 10, 6, 16, 9, 11, 8, 5, 8, 11, 10, 9, 12, 10, 7, 7, 11, 10, 12, 10, 10, 6,12, 13, 9, 13, 8, 17, 9, 12, 5, 13, 11, 15, 9, 8, 12, 15, 13, 5, 13, 14, 15, 10, 9, 12, 6, 12, 14, 13, 11, 11,11, 13, 17, 8, 11, 9, 15, 6, 5, 11, 7, 12, 6, 12, 13, 14, 11, 9, 16, 13, 18, 14, 9, 6, 8, 13, 11, 12, 17, 12, 11, 12, 18, 5, 11, 11, 14, 11, 10, 9]
 set2 = [7, 12, 7, 7, 5, 11, 4, 12, 8, 5, 3, 8, 7, 7, 8, 5, 7, 8, 11, 6, 6, 9, 11, 5, 10, 8, 4, 5, 2, 6, 6, 9, 8, 7, 2, 9, 4, 12, 7, 8, 9, 4, 9, 7, 4, 8, 10, 3, 5, 8, 12, 8, 5, 6, 6, 4, 10, 3, 6, 4, 5, 11, 10, 4, 8, 8, 11, 5, 9, 7, 12, 4, 7, 6, 7, 9, 4, 12, 8, 7, 12, 9, 8, 12, 7, 5, 9, 8, 9, 4, 9, 5, 2, 8, 8, 9, 5, 8, 4, 4]
@@ -16,9 +16,12 @@ def mean(data):
     return round(k,2)
 
 def sd(data):
+    j=0
+    for i in data:
+        j+=math.pow(i-mean(data),2)
+    psd=math.sqrt(j/len(data))
+    return round(psd,2)
 
-    return
-    
 """
 assert round(mean(set1),2) == 10.77
 assert round(sd(set1),2) == 3.19
@@ -32,3 +35,10 @@ for i in set3:
     a+=set3[i]
 a=a/len(set3)
 print(a)
+
+
+j=0
+for i in set3:
+    j+=math.pow(i-mean(set3),2)
+psd=math.sqrt(j/len(set3))
+print(round(psd,2))
