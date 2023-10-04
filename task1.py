@@ -73,6 +73,11 @@ teamname=['Ants', 'Bears', 'Cougars', 'Doges', 'Elephants', 'Foxes', 'Giants']
 #lengthg=len([d for d in gameData if isinstance(d, dict)])
 teamData={}
 
+print("****")
+for i in gameData:
+    if i['t1'] == "A" or i['t2']== "A":
+        print(i)
+
 for i in teamname:
     teamData[i]= team()
 print(teamData)
@@ -115,12 +120,12 @@ for i in range(len(gameData)):
         
 
         
-print( teamData['Ants'].wins )
-print( teamData['Bears'].losses )
-print( teamData['Ants'].losses )
+print("A wins", teamData['Ants'].wins )
+print("B losses", teamData['Bears'].losses )
+print("A losses", teamData['Ants'].losses )
 print( teamData['Ants'].totalPoints )
 print( teamData['Bears'].totalPoints )
-print( teamData['Bears'].wins )
+print("B wins", teamData['Bears'].wins )
 
 
 """
