@@ -30,6 +30,7 @@ assert round(sd(set2),2) == 2.60
 assert round(mean(set3),2) == 10.34
 assert round(sd(set3),2) == 2.20
 """
+
 a=0
 for i in set3:
     a+=set3[i]
