@@ -11,7 +11,13 @@ class NPC:
 
     
     def __init__(self):
+        # generate self.stats
+        # determine self.level
+        # determine self.gold, self.silver, self.copper
+        # calculate self.wealth()
+        
         return
+
 
 
 
