@@ -27,19 +27,28 @@ assert round(mean(set1),2) == 10.77
 assert round(sd(set1),2) == 3.19
 assert round(mean(set2),2) == 7.16
 assert round(sd(set2),2) == 2.60
-assert round(mean(set3),2) == 10.34
-assert round(sd(set3),2) == 2.20
+assert round(mean(set3),2) == 10.09
+assert round(sd(set3),2) == 2.21
 """
 
 a=0
-for i in set3:
-    a+=set3[i]
-a=a/len(set3)
+for i in set1:
+    a+=set1[i]
+a=a/len(set1)
 print(a)
 
 
 j=0
-for i in set3:
-    j+=math.pow(i-mean(set3),2)
-psd=math.sqrt(j/len(set3))
+for i in set1:
+    j+=math.pow(i-mean(set1),2)
+psd=math.sqrt(j/len(set1))
 print(round(psd,2))
+
+"""
+assert round(mean(set1),2) == 10.77
+assert round(sd(set1),2) == 3.19
+assert round(mean(set2),2) == 7.16
+assert round(sd(set2),2) == 2.60
+assert round(mean(set3),2) == 10.34
+assert round(sd(set3),2) == 2.20
+"""
