@@ -44,6 +44,32 @@ for i in set2:
 psd=math.sqrt(j/len(set2))
 print(round(psd,2))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 assert round(mean(set1),2) == 10.77
 assert round(sd(set1),2) == 3.19
