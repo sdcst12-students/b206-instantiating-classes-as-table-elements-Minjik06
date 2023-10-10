@@ -22,26 +22,26 @@ def sd(data):
     psd=math.sqrt(j/len(data))
     return round(psd,2)
 
-"""
-assert round(mean(set1),2) == 10.77
-assert round(sd(set1),2) == 3.19
-assert round(mean(set2),2) == 7.16
-assert round(sd(set2),2) == 2.60
+
+assert round(mean(set1),2) == 10.44
+assert round(sd(set1),2) == 3.20
+assert round(mean(set2),2) == 7.51
+assert round(sd(set2),2) == 2.62
 assert round(mean(set3),2) == 10.09
 assert round(sd(set3),2) == 2.21
-"""
+
 
 a=0
-for i in set1:
-    a+=set1[i]
-a=a/len(set1)
+for i in set2:
+    a+=set2[i]
+a=a/len(set2)
 print(a)
 
 
 j=0
-for i in set1:
-    j+=math.pow(i-mean(set1),2)
-psd=math.sqrt(j/len(set1))
+for i in set2:
+    j+=math.pow(i-mean(set2),2)
+psd=math.sqrt(j/len(set2))
 print(round(psd,2))
 
 """
